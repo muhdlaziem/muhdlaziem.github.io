@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body id="home">
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Portfolio</a>
-      <a href="#projects">Projects</a>
-      <a href="#attachments">Attachments</a>
-      <a href="#references">References</a>
+    <!-- <div class="topnav" id="myTopnav">
+      <a href="#portfolio" class="active menu">Portfolio</a>
+      <a href="#projects" class ="menu">Projects</a>
+      <a href="#attachments" class ="menu">Attachments</a>
+      <a href="#references" class ="menu">References</a>
       <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a> -->
@@ -27,11 +28,12 @@
       
       
       <header>
-        <h1>Muhammad Laziem Shafie</h1>
+        <h1><a href="https://muhdlaziem.github.io">Muhammad Laziem Shafie</a></h1>
         <img src="./assets/img/portfolio/profileRound.png"/>
         <br><br><br>
         <p>4rd year student of Kulliyah Information and Communication
           Technology, IIUM. </p>
+        <p>Looking for <strong>internship</strong> from <strong>August 2020 - December 2020</strong></p>
         <!-- <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p> -->
         <ul>
           <li><a href="https://www.linkedin.com/in/muhdlaziem/">Follow Me<strong>Linkedin</strong></a></li>
@@ -70,41 +72,53 @@
           </ul>
           <hr>
           <h2>My Activities</h2>
-          <a href="">I-KIDZ Programme</a>
-          <br><br>
-          <a href=""><img src="assets/img/portfolio/1.JPG?raw=true"/></a> 
+          <div class="polaroid">
+            <img src="assets/img/portfolio/1.JPG?raw=true" alt="I-KIDZ Programme" style="width:100%">
+            <div class="container">
+            <p>I-KIDZ Programme</p>
+            </div>
+          </div>
 
-          <hr>
-          <a href="">ACM ICPC 2018</a>>
-          <br><br>
-          <a href=""><img src="assets/img/portfolio/2.JPG?raw=true"/></a> 
+          <div class="polaroid">
+            <img src="assets/img/portfolio/2.JPG?raw=true" alt="ACM ICPC 2018" style="width:100%">
+            <div class="container">
+            <p>ACM ICPC 2018</p>
+            </div>
+          </div>
+          
+          <div class="polaroid">
+            <img src="assets/img/portfolio/3.jpg?raw=true" alt="Data Analytics Cluster Bootcamp" style="width:100%">
+            <div class="container">
+            <p>Data Analytics Cluster Bootcamp</p>
+            </div>
+          </div>
 
-          <hr>
-          <a href="">Data Analytics Cluster Bootcamp</a>
-          <br><br>
-          <img src="assets/img/portfolio/3.jpg?raw=true"/>
+          <div class="polaroid">
+            <img src="assets/img/portfolio/4.jpg?raw=true" alt="Recreation 2 Camp" style="width:100%">
+            <div class="container">
+            <p>Recreation 2 Camp</p>
+            </div>
+          </div>
+          
+          <div class="polaroid">
+            <img src="assets/img/portfolio/5.jpg?raw=true" alt="NASA Space Apps Challenge (Hackhaton)" style="width:100%">
+            <div class="container">
+            <p>NASA Space Apps Challenge (Hackhaton)</p>
+            </div>
+          </div>
 
-          <hr>
-          <a href="">Recreation 2 Camp</a>
-          <br><br>
-          <a href="/activity_3"><img src="assets/img/portfolio/4.jpg?raw=true"/></a> 
-
-
-          <hr>
-          <a href="">NASA Space Apps Challenge (Hackhaton)</a>
-          <br><br>
-          <a href="/activity_5"><img src="assets/img/portfolio/5.jpg?raw=true"/></a> 
-
-          <hr>
-          <a href="">ie-RIICH'19</a>
-          <br><br>
-          <a href="/activity_6"><img src="assets/img/portfolio/8.jpg?raw=true"/></a> 
-
+          <div class="polaroid">
+            <img src="assets/img/portfolio/8.jpg?raw=true" alt="ie-RIICH'19" style="width:100%">
+            <div class="container">
+            <p>ie-RIICH'19</p>
+            </div>
+          </div>
 
         </div>
-        <br><hr>
+        <hr>
         <div id="projects" style="padding-top: 20px;">
           <h1>My Projects</h1>
+          <hr>
           <ul>
             <li><a href="https://github.com/muhdlaziem/barcode-scanner">Barcode Scanner (React-Native)</a></li>
             <li><a href="https://github.com/muhdlaziem/DR">Diabetic Retinopathy Detection using Deep Neural Network (FYP)</a></li>
@@ -116,8 +130,9 @@
 
         <div id="attachments">
           <h1>Attachments</h1>
+          <hr>
           <ul>
-            <li><a href="./assets/pdf/Official Resume Muhammad Laziem.pdf">Resume</a></li>
+            <li><a href="./assets/pdf/Official Resume Muhammad Laziem.pdf">My Resume</a></li>
             <li><a href="https://courses.edx.org/certificates/acb1c556def94997896f7f54658cc2e4">DL0101EN: Deep Learning Fundamentals with Keras (Certificate)</a></li>
             <li><a href="https://courses.edx.org/certificates/d157833697f142e59b9da5de715679d3">DL0120EN: Deep Learning with Tensorflow (Certificate)</a></li>
           </ul>
@@ -125,6 +140,7 @@
 
         <div id="references">
           <h1>References</h1>
+          <hr>
             <ul>
             
               <li>Normaziah Binti Abdul Aziz
@@ -142,20 +158,29 @@
                 
               </li>
             </ul>
-            
+            <hr>
  
 
         </div>
         
 
-       
+        <footer class="src" st>
+          <p><small>Source Code &mdash; <a href="https://github.com/muhdlaziem/muhdlaziem.github.io">@repo</a></small></p>
+    
+        </footer>
       </section>
       
+
       <footer class="second" >
-        <p><small>Prepared by <a href="https://github.com/muhdlaziem">@muhdlaziem</a></small></p>
+        <p><small>Prepared by<a href="https://github.com/muhdlaziem">@muhdlaziem</a></small></p>
+        <p><small>Source Code &mdash; <a href="https://github.com/muhdlaziem/muhdlaziem.github.io">@repo</a></small></p>
+
 
       </footer>
     </div>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="javascripts/scale.fix.js"></script>
+
   </body>
 </html>
