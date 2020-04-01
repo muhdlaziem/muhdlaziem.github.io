@@ -1,0 +1,122 @@
+
+/*Main feature.css*/
+.wrapper{
+margin: 20px auto 20px auto;
+
+}
+
+.desc1{
+width: 600px;
+float: left;
+}
+
+.photo1{
+width: 400px;
+float: right;
+padding-left: 2px;
+border-radius: 50%;
+}
+
+img.photo1
+{
+	margin-right: 25px;
+	border-radius: 50%;
+}
+
+.desc2{
+width: 600px;
+float: right;
+}
+
+.photo2{
+width: 400px;
+float: left;
+padding-left: 2px;
+}
+
+
+.container{
+	width: 981px;
+	margin: 40px auto 20px auto;
+}
+
+p.container{
+font-size: 25%;
+}
+
+.topcontainer{
+	width: 80%;
+	margin: 40px auto 20px auto;
+}
+
+div.slider{
+	width: 1100px;
+	margin-left: -35px;
+}
+/*Start amik dri main*/
+
+
+div.text-center{
+  background-color: black;
+  height: 200px;
+margin: -50px auto 30px;
+}
+
+.navbar-nav{
+  top:0;
+	font-size: 120%;
+}
+
+/*Navbar Overwritting */
+.form-inline{
+  float: right;
+}
+
+nav.navbar.navbar-default{
+
+  background-color:  black;
+  border-color:  black;
+  border-radius: 0px;
+}
+
+a.navbar-default a.navbar-brand {
+    color: #f4c51d;
+}
+
+ul.nav.navbar-nav{
+margin: 0px 100px;
+}
+
+.navbar-default{
+  margin: -30px auto auto auto;
+}
+
+.embed-responsive-16by9{
+  height: 200px;
+}
+
+a.navbar-nav {
+	 color: white;
+	 }
+
+button.btn.btn-default.btn-lg {
+    color: #fff;
+    background-color: #CF000F;
+    border-color: #101010;
+}
+
+
+div.footer-bottom {
+   color: white;
+    background-color: #201F1F;
+    padding: 2em 0;
+    text-align: center;
+}
+
+
+.footer {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}

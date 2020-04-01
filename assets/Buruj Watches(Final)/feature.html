@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buruj Exclusive</title>
+  <link rel="shortcut icon" href="media/logo.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/feature.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <style type="text/css">
+
+  body{
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  /*background-image: url("media/index/1.png");*/
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: auto;
+  overflow-x: hidden;
+      }
+
+  h1{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 250%;
+  }
+
+  .quotes h1 {
+    font-family: Century Gothic;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 600%;
+    text-align: center;
+  }
+
+.quotes h4{
+  font-size: 200%;
+  font-style: italic;
+}
+
+
+  .sub h3{
+  text-align: center;
+  font-family: ;
+  font-size: 200%;
+  font-weight: bold;
+  }
+
+  .sub p{
+  font-family: ;
+  font-size: 100%;
+  font-weight: bold;
+  font-style: oblique;
+  }
+
+  .active {
+    background-color: #ffd200;}
+
+    footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 15px;
+  padding-bottom: -40px;
+      background-color: black;
+      text-shadow: 0px 1px 1px black;
+      text-align: center;}
+
+    .footerText {
+      font-size: 86%;
+      color: white;
+    font-weight: normal;}
+
+    /*search-form*/
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 15px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 40%;
+    }
+
+    #search-form{
+
+      margin-left: 40%;
+      margin-right: 50%;
+      font-size: 15px;
+      font-family: century Gothic;
+      width:450px;
+      padding: 7px 0px;
+    }
+  </style>
+  <script type="text/javascript">
+  /*search-form*/
+  var myHilitor; // global variable
+
+  document.addEventListener("DOMContentLoaded", function(e) {
+    myHilitor = new Hilitor("wrapper");
+    myHilitor.apply("highlight these words");
+
+    var targetNode = document.getElementsByTagName("h1")[0];
+    var el = document.createElement("h1");
+    el.id = "remove_hilite";
+    el.style.fontSize = "10px";
+
+    targetNode.parentNode.insertBefore(el, targetNode.nextSibling);
+  }, false);
+  </script>
+
+</head>
+<body>
+
+
+<div id="body">
+  <div class="jumbotron text-center">
+    <img src="media/newnavbar.jpg" alt="Buruj Banner"  >
+  </div>
+
+  <nav class = "navbar navbar-default" role = "navigation">
+
+     <div class = "navbar-header">
+        <button type = "button" class = "navbar-toggle"
+           data-toggle = "collapse" data-target = "#example-navbar-collapse">
+           <span class = "sr-only">Toggle navigation</span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+        </button>
+
+        <a class = "navbar-brand" href = "index.html">Buruj Watches</a>
+     </div>
+
+     <div class = "collapse navbar-collapse" id = "example-navbar-collapse" >
+
+       <ul class = "nav navbar-nav">
+          <li><a href = "index.html">HOME</a></li>
+          <li><a href = "product.html">PRODUCT</a></li>
+          <li><a class="active" href = "feature.html">FEATURES</a></li>
+          <li><a href = "tutorial.html">TUTORIAL</a></li>
+          <li><a href = "contact.html">CONTACT US</a></li>
+          <li><a href = "about.html">ABOUT US</a></li>
+        </ul>
+
+
+        <a href="https://web.facebook.com/burujexclusive/"  target="_blank"><img src="media/facebook.png" alt="fb icon"style="float:right" height="45" width="45"></a>
+          <a href="https://www.youtube.com/channel/UCH0kS4fEJ4hMx30PVh4vmaQ"  target="_blank"><img src="media/youtube.png" alt="fb icon"style="float:right" height="45" width="45" hspace="15"></a>
+          <a href="https://www.instagram.com/burujexclusive/"  target="_blank"><img src="media/instagram.png" alt="fb icon"style="float:right" height="45" width="45"></a>
+
+     </div>
+
+  </nav>
+
+  <div class="topcontainer">
+    <div class="sub">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="quotes"><align="center">
+            <h1>Features for The Buruj Watches</h1>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="intropic">
+            <section>
+                 <div class="slider">
+                    <div class="slide-viewer">
+                      <div class="slide-group">
+                        <div class="slide slide-1">
+                          <img src="media/feature/top/1.jpg" alt="Watch 1"  />
+                        </div>
+                        <div class="slide slide-2">
+                          <img src="media/feature/top/2.jpg" alt="Watch 2" />
+                        </div>
+                        <div class="slide slide-3">
+                          <img src="media/feature/top/3.jpg" alt="Watch 3"   />
+                        </div>
+                        <div class="slide slide-1">
+                          <img src="media/feature/top/4.jpg" alt="Watch 4"  />
+                        </div>
+                        <div class="slide slide-2">
+                          <img src="media/feature/top/5.jpeg" alt="Watch 5"  />
+                        </div>
+                        <div class="slide slide-3">
+                          <img src="media/feature/top/6.jpg" alt="Watch 6"  />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+          </div>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="search-form">
+      <form method="GET" onsubmit="myHilitor.apply(hilite.value); return false;">
+            <input type="text" size="7" name="hilite" placeholder="Search...">
+            <button type="submit" onclick="myHilitor.apply();" class="btn btn-default btn-lg"><i class="fa fa-search"></i>
+            <span class="glyphicon glyphicon-search" aria-hidden="true" type="submit"></span></button>
+          <span id='matches' style="color:black"></span><label style="color:black"> result(s)</label>
+        </form>
+  </div>
+
+
+
+<div id="wrapper">
+
+  <div class="container">
+    <div class="desc1">
+      <div id="prizes">
+        <div id="tab-1">
+          <div class="quotes"><align="center">
+            <h1>Prayer Time</h1>
+            <h4>No need to take out your phone just to see the prayer time, just press a button and the watch will automatically show the prayer time. The watch will show the  prayer time according to the place you are.</h4>
+          </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="photo1">
+        <img src="media/feature/1.jpeg" alt="" style="border-radius: 10px;" >
+    </div>
+  </div>
+
+<hr>
+
+ <div class="container">
+   <div class="desc2">
+     <div id="prizes">
+        <div id="tab-1">
+          <div class="quotes"><align="center">
+            <h1>Qiblat Direction</h1>
+            <h4>If you are in traveling, this watch will make your life much more easier as the watch will help you by directing you to the Qiblat when you want to perform your prayer</h4>
+          </div>
+          </div>
+     </div>
+   </div>
+
+   <div class="photo2">
+       <img src="media/feature/2.jpeg" alt="" style="border-radius: 10px;" >
+   </div>
+ </div>
+
+<hr>
+
+ <div class="container">
+   <div class="desc1">
+     <div id="prizes">
+       <div id="tab-1">
+         <div class="quotes"><align="center">
+           <h1>Alarm Clock</h1>
+            <h4>For those who have the difficulty to wake up at dawn, dont be afraid. Turn on the alarm on this watch and you wont ever need those classic looking watch ever again.</h4>
+         </div>
+        </div>
+     </div>
+   </div>
+
+   <div class="photo1">
+       <img src="media/feature/3.jpeg" alt="" style="border-radius: 10px;" >
+   </div>
+ </div>
+
+<hr>
+
+<div class="container">
+  <div class="desc2">
+    <div id="prizes">
+       <div id="tab-1">
+         <div class="quotes"><align="center">
+           <h1>Set Name </h1>
+           <h4>It's one of the rarest and interesting feature for this watch, you can write your name or anyones name so that they know who is the owner of this watch or to make a surprise gift for your loved ones too.</h4>
+         </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="photo2">
+      <img src="media/feature/4.jpeg" alt="" style="border-radius: 10px;" >
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="desc1">
+    <div id="prizes">
+      <div id="tab-1">
+        <div class="quotes"><align="center">
+          <h1>Hijr Calendar</h1>
+          <h4>This watch also provide with the Hijr calendar , so that you will never miss the important date in Islam.</h4>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="photo1">
+      <img src="media/feature/5.jpeg" alt="" style="border-radius: 10px;" >
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="desc2">
+    <div id="prizes">
+       <div id="tab-1">
+         <div class="quotes"><align="center">
+           <h1>Stopwatch</h1>
+           <h4>Athlete also can use this watch as it provides a stopwatch , to calculate how many minutes do you pray ?</h4>
+         </div>
+         </div>
+    </div>
+  </div>
+
+  <div class="photo2">
+      <img src="media/feature/6.jpeg" alt="" style="border-radius: 10px;" >
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="desc1">
+    <div id="prizes">
+      <div id="tab-1">
+        <div class="quotes"><align="center">
+          <h1>Battery Indicator</h1>
+          <h4>No need to worry about how much battery life is left, this watch will show the amount of battery for you and usually regular battery can withstand up to 2 to 3 years !.</h4>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="photo1">
+      <img src="media/feature/7.jpeg" alt="" style="border-radius: 10px;" >
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="desc2">
+    <div id="prizes">
+       <div id="tab-1">
+         <div class="quotes"><align="center">
+           <h1>Quran Book Marker</h1>
+           <h4>Good news !!! Now we can bookmark whenever surah in the Quran so say goodbye to those old bookmark of yours</h4>
+         </div>
+         </div>
+    </div>
+  </div>
+
+  <div class="photo2">
+      <img src="media/feature/8.jpeg" alt="" style="border-radius: 10px;" >
+  </div>
+</div>
+
+</div>
+</div>
+<h6 align= "middle" style="font-weight:bold">[<a href="#body">Back to Top</a>]</h6>
+  <footer><font face="Century Gothic">
+    <p class="footerText">Copyright &copy; Buruj Watches 2017</p>
+  <footer>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/hilitor.js"></script>
+
+
+</html>

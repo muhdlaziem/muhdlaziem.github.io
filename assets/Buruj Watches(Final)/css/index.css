@@ -1,0 +1,171 @@
+
+.wrapper{
+width: 1620px;
+height 50%;
+margin: 60px auto 20px auto;
+}
+
+#form{
+	background-color: #ABB7B7;
+	color: white;
+	height: 500px;
+}
+
+#banner{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+/*Overwrite bootstrap*/
+
+div.text-center{
+  background-color: black;
+  height: 200px;
+margin: -50px auto 30px;
+}
+.navbar-nav{
+  top:0;
+	font-size: 120%;
+}
+
+/*Navbar Overwritting */
+.form-inline{
+  float: right;
+}
+
+nav.navbar.navbar-default{
+
+  background-color:  black;
+  border-color:  black;
+  border-radius: 0px;
+}
+
+a.navbar-default a.navbar-brand {
+    color: black;
+}
+
+ul.nav.navbar-nav{
+margin: 0px 100px;
+}
+
+.navbar-default{
+  margin: -30px auto auto auto;
+}
+
+
+.embed-responsive-16by9{
+  height: 200px;
+}
+
+button.btn.btn-default.btn-lg {
+    color: #fff;
+    background-color: #CF000F;
+    border-color: #101010;
+}
+
+div.intro{
+width: 800px;
+}
+
+/*This code is to position the text on the slider image*/
+.carousel-caption {
+    position: absolute;
+    z-index: 1;
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.carousel-caption div {
+    display:table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.trickcenter h3 {
+	font-size: 500%;
+	font-family:
+	font-family: 'Century Gothic';
+  font-weight: bold;
+	margin-top: 200px;
+	margin-left: 580px;
+  top: 84%; // 50% for perfect centering
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Newsfeed */
+.banner-slider {
+   color: black;
+    background: url(../media/5.jpg)  no-repeat 0px 0px;
+    min-height: 462px;
+   background-size: auto 780px;}
+
+
+.maincontainer {
+ 			background-color: white;
+			height: auto;
+ 			width: 100%;
+ 	    padding-right: 15px;
+ 	    padding-left: 15px;
+ 	    margin-right: auto;
+ 	    margin-left: auto;
+ 	}
+
+.container {
+	padding-top: 60px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.banner-slider-grids{
+  margin-top: 25px;
+}
+
+
+
+div.footer-bottom {
+   color: white;
+    background-color: #201F1F;
+    padding: 2em 0;
+    text-align: center;
+}
+
+img.intropic  {
+margin-left: 20px;
+}
+
+/*Button submit*/
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}

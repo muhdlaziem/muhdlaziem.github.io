@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buruj Watches</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+
+  <link rel="shortcut icon" href="media/logo.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <style type="text/css">
+
+body{
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  /*background-image: url("media/index/1.png");*/
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: auto
+  overflow-x: hidden;
+      }
+
+h1{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  }
+
+ h2 {
+   padding: 20px;
+   text-align: center;
+   font-weight: bold;
+   font-style: italic;
+ }
+
+div.video {
+  display:inline-block;
+  margin: 0px 0px 150px 80px;
+  font-size: 80%;
+  font-weight: bold;
+  text-align: center;}
+
+  .inner-div {padding-top: 100px;}
+
+  .video-slider {
+  padding: 30px;}
+
+div.title {
+text-align: center;
+font-size: 30px;}
+
+.active {
+  background-color: #ffd200;}
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: -40px;
+    background-color: black;
+    text-shadow: 0px 1px 1px black;
+    text-align: center;}
+
+  .footerText {
+    font-size: 61%;
+    color: white;
+  font-weight: normal;}
+
+  .overall {
+    padding-top: 50px;
+  }
+  </style>
+</div>
+</head>
+<body>
+
+
+<div id="body">
+  <div class="jumbotron text-center">
+    <img src="media/newnavbar.jpg" alt="Buruj Banner"  >
+  </div>
+
+  <nav class = "navbar navbar-default" role = "navigation">
+
+     <div class = "navbar-header">
+        <button type = "button" class = "navbar-toggle"
+           data-toggle = "collapse" data-target = "#example-navbar-collapse">
+           <span class = "sr-only">Toggle navigation</span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+        </button>
+
+        <a class = "navbar-brand" href = "index.html">Buruj Watches</a>
+     </div>
+
+     <div class = "collapse navbar-collapse" id = "example-navbar-collapse" >
+
+        <ul class = "nav navbar-nav">
+           <li><a href = "index.html">HOME</a></li>
+           <li><a href = "product.html">PRODUCT</a></li>
+           <li><a href = "feature.html">FEATURES</a></li>
+           <li><a class="active" href = "tutorial.html">TUTORIAL</a></li>
+           <li><a href = "contact.html">CONTACT US</a></li>
+           <li><a href = "about.html">ABOUT US</a></li>
+        </ul>
+
+        <a href="https://web.facebook.com/burujexclusive/"  target="_blank"><img src="media/facebook.png" alt="fb icon"style="float:right" height="45" width="45"></a>
+          <a href="https://www.youtube.com/channel/UCH0kS4fEJ4hMx30PVh4vmaQ"  target="_blank"><img src="media/youtube.png" alt="fb icon"style="float:right" height="45" width="45" hspace="15"></a>
+          <a href="https://www.instagram.com/burujexclusive/"  target="_blank"><img src="media/instagram.png" alt="fb icon"style="float:right" height="45" width="45"></a>
+
+     </div>
+  </nav>
+
+<div class="overall">
+<div class="video-slider">
+
+
+  <div class="w3-content" style="max-width:800px">
+      <iframe class="mySlides" width="100%" height="400" src="https://www.youtube.com/embed/tutuKyNJ8Fc" frameborder="0" allowfullscreen></iframe>
+    <iframe class="mySlides" width="100%" height="400" src="https://www.youtube.com/embed/6k8En7eZHW0" frameborder="0" allowfullscreen></iframe>
+    <iframe class="mySlides" width="100%" height="400" src="https://www.youtube.com/embed/T0qKkiW5lAk" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+
+  <div class="w3-center">
+    <div class="w3-section">
+      <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+      <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+  </div>
+</div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-red";
+  }
+  </script>
+
+<br />
+<hr />
+<br />
+
+<div class="title">
+  <h1>Setting Videos</h1>
+  <h4>Don't know how to setting watch? Just click and play the videos!</h4>
+</div>
+
+<div class="w3-center">
+<div class="outer-div">
+   <div class="inner-div"><font face="Century Gothic" style="font-size:20px">
+   <div class="video" alt="Quran Bookmarker">
+     <iframe width="400" height="300"src="https://www.youtube.com/embed/QlHX-9vQ8F8" frameborder="0" allowfullscreen></iframe>
+     <p>Quran Bookmarker</p>
+   </div>
+   <div class="video" alt="Set Your Name" >
+     <iframe width="400" height="300" src="https://www.youtube.com/embed/tutuKyNJ8Fc" frameborder="0" allowfullscreen></iframe>
+     <p>Set Your Name</p>
+   </div><br />
+   <div class="video" alt="Azan Safety">
+     <iframe width="400" height="300" src="https://www.youtube.com/embed/Q_7RcVjMs5Y" frameborder="0" allowfullscreen></iframe>
+     <p>Azan Safety</p>
+   </div>
+   <div class="video" alt="Azan Alarm">
+     <iframe width="400" height="300" src="https://www.youtube.com/embed/T0qKkiW5lAk" frameborder="0" allowfullscreen></iframe>
+     <p>Azan Alarm</p>
+   </div><br />
+   <div class="video" alt="Set Location">
+     <iframe width="400" height="300" src="https://www.youtube.com/embed/XOECT-hutk8" frameborder="0" allowfullscreen></iframe>
+     <p>Set Location</p>
+   </div>
+   <div class="video" alt="Qibla and Calibrate" >
+     <iframe width="400" height="300" src="https://www.youtube.com/embed/6k8En7eZHW0" frameborder="0" allowfullscreen></iframe>
+     <p>Qibla and Calibrate</p>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h6 align= "middle" style="font-weight:bold">[<a href="#body">Back to Top</a>]</h6>
+<footer><font face="Century Gothic">
+  <p class="footerText">Copyright &copy; Buruj Watches 2017</p>
+<footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/filter-search.js"></script>
+
+
+</html>
