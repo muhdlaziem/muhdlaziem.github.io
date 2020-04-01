@@ -4,7 +4,7 @@ body {
   font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
   font-weight:400;
-
+  box-sizing: border-box;
   
 }
 div.polaroid {
@@ -347,36 +347,204 @@ footer.second{
   
 }
 
-.topnav a {
-  float: left;
+
+/* overlay */
+.overlay-container {
+  position: relative;
+  cursor: pointer;
+  
+  /* width: 50%; */
+}
+
+.image {
   display: block;
-  color: black;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #069;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.8;
+}
+
+.overlay-container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 14px 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto;  Enable scroll if needed */ 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 860px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 8px;
+  margin-top: -60px;
+  overflow: auto;
+  max-height: 90%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
   text-decoration: none;
-  font-size: 17px;
   cursor: pointer;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
+.modal-header {
+  padding: 16px 20px;
+  text-align: center;
+  color: black;
+}
+.modal-header h2 {
+  padding-top: 50px;
+}
+.modal-header img {
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.modal-body {
+  padding: 16px 30px;
+  text-align: center;
+  color: inherit;
+}
+
+.modal-footer {
+  padding: 30px 20px;
+  text-align: center;
   color: black;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+.closeButton {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  border: .125rem solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  border-radius: .5rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance: button;
+  overflow: auto;
+  font-family: inherit;
+}
+.closeButton:hover {
+  background-color: red;
 }
 
-.topnav .icon {
-  display: none;
+.download {
+  cursor: pointer;
+  color: #fff;
+  background-color: #22313f ;
+  border-color: #22313f ;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  border: .125rem solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  border-radius: .5rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance: button;
+  overflow: auto;
+  font-family: inherit;
+}
+.download:hover {
+  background-color: whitesmoke;
 }
 
-@media screen and (max-width: 600px) {
-  /* .topnav a:not(:first-child) {display: none;} */
-  .topnav a.icon {
-    float: right;
-    display: block;
+@media print, screen and (max-width: 900px) {
+  .modal-content {
+    margin: 20px;
+    margin-top: -60px;
+
   }
 }
 /* 
