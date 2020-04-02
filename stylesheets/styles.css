@@ -227,6 +227,9 @@ footer.second{
 
 
 @media print, screen and (max-width: 960px) {
+  h1, h2, h3 {
+    text-align: center;
+  }
   footer.first ,.src{
     display: none;
   }
