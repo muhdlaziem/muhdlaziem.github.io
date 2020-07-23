@@ -138,7 +138,7 @@ var sticky = header.offsetTop;
 // }
 
 function myFunction() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset > sticky && window.innerHeight > 720) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
