@@ -126,6 +126,36 @@ for(let i = 0; i<close.length; ++i){
   }
 }
 
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+// while(header.clientHeight > window.innerHeight) {
+  // let top = header.clientHeight - window.innerHeight
+  
+  // header.style.top = `-${top}px`
+// }
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+  
+}
+if(header.clientHeight > window.outerHeight){
+  let top = header.clientHeight - window.innerHeight
+  header.style.top = `-${top}px`
+}
+window.onresize = function() {
+  if(header.clientHeight > window.outerHeight){
+    let top = header.clientHeight - window.innerHeight
+    header.style.top = `-${top}px`
+  }
+  
+}
 
 
 

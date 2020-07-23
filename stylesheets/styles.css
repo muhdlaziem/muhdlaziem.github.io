@@ -126,9 +126,15 @@ header {
   width:270px;
   padding: 20px;
   float:left;
-  position:fixed;
+  /* position:fixed; */
   -webkit-font-smoothing:subpixel-antialiased;
-  overflow: auto;
+  overflow: scroll !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+
 }
 
 header ul {
