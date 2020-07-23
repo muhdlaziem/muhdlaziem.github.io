@@ -138,19 +138,19 @@ var sticky = header.offsetTop;
 // }
 
 function myFunction() {
-  if (window.pageYOffset > sticky && window.innerWidth > 720) {
+  if (window.pageYOffset > sticky && window.innerWidth > 960) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
   
 }
-if(header.clientHeight > window.outerHeight){
+if(header.clientHeight > window.outerHeight && window.innerWidth > 960){
   let top = header.clientHeight - window.innerHeight
   header.style.top = `-${top}px`
 }
 window.onresize = function() {
-  if(header.clientHeight > window.outerHeight){
+  if(header.clientHeight > window.outerHeight && window.innerWidth > 960){
     let top = header.clientHeight - window.innerHeight
     header.style.top = `-${top}px`
   }
